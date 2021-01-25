@@ -1,0 +1,22 @@
+aws:
+ access-key: AKIA6LFHN46PA3OVQMU5
+ secret-key: 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
+ dynamodb.endpoint: https://dynamodb.us-east-1.amazonaws.com
+
+cloud:
+ aws:
+   stack:
+     auto: false
+   region:
+     auto: false
+     static: us-east-1
+   credentials.accessKey: AKIA6LFHN46PA3OVQMU5
+   credentials.secretKey: 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
+   credentials.instanceProfile: true
+   credentials.useDefaultAwsCredentialsChain: true
+
+spring:
+  data:
+     dynamodb:
+        entity2ddl:
+           auto:validate
